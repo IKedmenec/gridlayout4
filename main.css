@@ -1,0 +1,87 @@
+body {
+    font-family: Arial;
+    margin: 15px;
+    text-align: center;
+}
+
+.wrap {
+    display: inline-block;
+    margin: 0 40px 2em 0;
+    background: lightgray;
+}
+
+div {
+    width: 170px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 0 auto;
+    transition: all 0.5s ease-in-out;
+}
+
+div:hover {
+    cursor: pointer;
+}
+
+/* jednake su nam prva, cetvrta, sedma i deseta */
+
+.one,
+.four,
+.seven,
+.ten {
+    background: tomato;
+}
+
+.one:hover {
+    transform: translate(20px);
+}
+
+.two:hover {
+    transform: translateY(-20px);
+}
+
+.three:hover {
+    transform: translate(-20px, 20px);
+}
+
+.four:hover {
+    transform: scale(-1);
+}
+
+.five:hover {
+    transform: scale(1.2);
+}
+
+.six:hover {
+    transform: scale(1.2, 0.5);
+}
+
+.seven:hover {
+    transform: rotate(720deg);
+}
+
+.eight:hover {
+    transform: skewX(20deg);
+}
+
+.nine:hover {
+    transform: skewY(-20deg);
+}
+
+.ten:hover {
+    transform: skew(-20deg, 20deg);
+}
+
+.eleven:hover {
+    transform: matrix(1.2,0,0.5,1.2,50,0);
+}
+
+.two,
+.five,
+.eight,
+.eleven {
+    background: skyblue;
+}
+
+.three, .six, .nine {
+    background: gold;
+}
